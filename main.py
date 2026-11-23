@@ -151,7 +151,7 @@ def run_mode1():
     print("연산 시간(평균/{0}회): {1:.4f} ms".format(REPEAT, avg_ms))
     result = judge(score_a, score_b, "A", "B")
     if result == UNDECIDED:
-        print("판정: 판정 불가 (|A-B| < {0:g})".format(EPSILON))
+        print("판정: 판정 불가 (|A-B| < 1e-9)")
     else:
         print("판정: {0}".format(result))
     print()
